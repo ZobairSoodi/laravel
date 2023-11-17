@@ -68,7 +68,8 @@ class StaffController extends Controller
             'last_name' => $request->last_name,
             'email' => $request->email,
             'agency_id' => $request->agency_id,
-            'phone' => $request->phone
+            'phone' => $request->phone,
+            'role' => $request->role
         ]);
 
         return response()->json($staff_updated, 200);
